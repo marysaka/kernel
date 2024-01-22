@@ -12,5 +12,5 @@ then
 fi
 
 fedpkg --release f39 local --arch aarch64 -- \
-            --define "buildid .panthor" \
+            --define "buildid .panthorv4" \
             $RPMBUILD_ARGS

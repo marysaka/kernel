@@ -2,13 +2,14 @@
 
 set -e
 
-KERNEL_TREE_URL="https://gitlab.freedesktop.org/bbrezillon/linux.git"
+KERNEL_TREE_URL="https://gitlab.freedesktop.org/panfrost/linux.git"
 KERNEL_SRC_PATH=$PWD/linux
-PINNED_COMMIT="6cad25656baac7cf42ee463a57fa42d940594cf0"
+PINNED_BRANCH="panthor-v4+rk3588"
+PINNED_COMMIT="d47e1c6db9dedd541f86fda0cadd1cb8f10988a5"
 ARCHIVE_NAME="linux-6.7-rc3"
 
 if [ ! -d "$KERNEL_SRC_PATH" ]; then
-    git clone $KERNEL_TREE_URL $KERNEL_SRC_PATH
+    git clone $KERNEL_TREE_URL $KERNEL_SRC_PATH --branch $PINNED_BRANCH
 fi
 
 TARGET_OUTPUT_PATH=$PWD
