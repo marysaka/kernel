@@ -1,2 +1,31 @@
 # This file is intentionally left empty in the stock kernel. Its a nicety
 # added for those wanting to do custom rebuilds with altered config opts.
+CONFIG_DRM_PANTHOR=m
+
+# New items from current tree
+CONFIG_ARM_ROCKCHIP_CPUFREQ=m
+CONFIG_PHY_ROCKCHIP_SAMSUNG_HDPTX=y
+CONFIG_PHY_ROCKCHIP_SAMSUNG_HDPTX_HDMI=y
+CONFIG_PHY_ROCKCHIP_USBDP=m
+# CONFIG_DRM_PANEL_BOE_TH101MB31UIG002_28A is not set
+# CONFIG_DRM_PANEL_ILITEK_ILI9805 is not set
+# CONFIG_DRM_PANEL_NOVATEK_NT36672E is not set
+# CONFIG_DRM_PANEL_SYNAPTICS_R63353 is not set
+# CONFIG_DRM_PANEL_HIMAX_HX83112A is not set
+# CONFIG_DRM_PANEL_SAMSUNG_S6E3FA7 is not set
+# CONFIG_DRM_RZG2L_DU is not set
+# CONFIG_DRM_IMX8MP_DW_HDMI_BRIDGE is not set
+# CONFIG_DRM_IMX8MP_HDMI_PVI is not set
+# CONFIG_VIDEO_SYNOPSYS_HDMIRX is not set
+
+# We don't need PowerVR
+# CONFIG_DRM_POWERVR is not set
+
+# Disable KUNIT all tests as some may not build atm
+# CONFIG_KUNIT_ALL_TESTS is not set
+
+# Disable header checks because of ./usr/include/drm/rockchip_drm.h failure on current tree
+# CONFIG_UAPI_HEADER_TEST is not set
+
+# Disable for to cross compile from x86_64
+# CONFIG_RUST is not set
