@@ -23,3 +23,9 @@ CONFIG_PHY_ROCKCHIP_USBDP=m
 
 # Disable for to cross compile from x86_64
 # CONFIG_RUST is not set
+
+# Fail depmod
+# CONFIG_PHY_QCOM_QMP_COMBO is not set
+# CONFIG_QCOM_PMIC_GLINK is not set
+# CONFIG_TYPEC_QCOM_PMIC is not set
+# CONFIG_TYPEC_MUX_NB7VPQ904M is not set
