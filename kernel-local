@@ -29,3 +29,6 @@ CONFIG_PHY_ROCKCHIP_USBDP=m
 
 # Disable for to cross compile from x86_64
 # CONFIG_RUST is not set
+
+# External module by fedora official but need to be on for rockchip.
+CONFIG_COMMON_CLK_SCMI=y
